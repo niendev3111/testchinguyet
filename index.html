@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metcord - AI-Powered Meeting Recording</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <div class="logo">
+                    <span class="logo-icon">M</span>
+                    <span class="logo-text">Metcord</span>
+                </div>
+            </div>
+            <nav class="nav-menu">
+                <a href="#about" class="nav-link">About us</a>
+                <a href="#product" class="nav-link">Product</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#how-it-works" class="nav-link">How It Works</a>
+                <a href="#signup" class="nav-link">Sign up</a>
+                <button class="dark-mode-toggle" id="darkModeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="btn-primary">Start for free</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Elevate your meetings with AI-powered recording</h1>
+                    <p class="hero-description">
+                        With our advanced artificial intelligence technology, your meetings are not just recorded - they're transformed into valuable insights and productivity boosters.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn-primary btn-large">Start for free</button>
+                        <button class="btn-secondary btn-large">Watch demo</button>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-text">Active users per month</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">23+</span>
+                            <span class="stat-text">Available in many country</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="video-call-demo">
+                        <div class="main-caller">
+                            <div class="caller-avatar">
+                                <div class="avatar-image">👩</div>
+                            </div>
+                            <div class="recording-indicator">
+                                <div class="rec-dot"></div>
+                                REC
+                            </div>
+                            <div class="caller-name">Sarah</div>
+                        </div>
+                        <div class="participants">
+                            <div class="participant">
+                                <div class="participant-avatar">👨</div>
+                                <div class="participant-name">Mike</div>
+                            </div>
+                            <div class="participant">
+                                <div class="participant-avatar">👨</div>
+                                <div class="participant-name">John</div>
+                            </div>
+                            <div class="participant">
+                                <div class="participant-avatar">👨</div>
+                                <div class="participant-name">Alex</div>
+                            </div>
+                        </div>
+                        <div class="meeting-info">
+                            <div class="meeting-title">Weekly Team Sync</div>
+                            <div class="meeting-time">2:34:15</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners">
+        <div class="container">
+            <p class="partners-text">Used daily by more than 2,000+ companies</p>
+            <div class="partners-logos">
+                <div class="partner-logo">
+                    <div class="partner-icon google-meet-icon">
+                        <div class="google-meet-small">
+                            <div class="google-colors-small">
+                                <div class="color-small blue"></div>
+                                <div class="color-small green"></div>
+                                <div class="color-small yellow"></div>
+                                <div class="color-small red"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <span>Google Meet</span>
+                </div>
+                <div class="partner-logo">
+                    <div class="partner-icon zoom-icon">
+                        <div class="zoom-small">
+                            <div class="zoom-circle-small">
+                                <i class="fas fa-video"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <span>Zoom</span>
+                </div>
+                <div class="partner-logo">
+                    <div class="partner-icon slack-icon">
+                        <div class="slack-small">
+                            <div class="slack-knot">
+                                <div class="knot-part"></div>
+                                <div class="knot-part"></div>
+                                <div class="knot-part"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <span>Slack</span>
+                </div>
+                <div class="partner-logo">
+                    <div class="partner-icon afterpay-icon">
+                        <div class="afterpay-small">
+                            <div class="card-icon">
+                                <div class="card-line"></div>
+                                <div class="card-line"></div>
+                                <div class="card-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <span>Afterpay</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Smart Recording Solutions -->
+    <section class="smart-solutions">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Smart recording solutions</h2>
+                <p class="section-description">
+                    In the realm of AI-powered recording, our cutting-edge technology takes documentation to unprecedented heights. With the capability to capture and summarize key moments effortlessly.
+                </p>
+            </div>
+
+            <!-- Main Feature Section -->
+            <div class="main-feature-section">
+                <!-- Left Side: Chat Interface -->
+                <div class="main-feature-left">
+                    <div class="chat-interface-large">
+                        <div class="chat-tabs">
+                            <span class="tab active">Summary</span>
+                            <span class="tab">Notes</span>
+                            <span class="tab">Timeline</span>
+                            <span class="tab">Key point</span>
+                        </div>
+                        <div class="chat-content">
+                            <div class="message-container">
+                                <div class="message from-andy">
+                                    <div class="message-text">Let's dive into the project updates. Can you give us a quick overview of the current status and any challenges you're facing?</div>
+                                </div>
+                                <div class="message from-johnson">
+                                    <div class="message-text">Sure, we've made good progress on Phase 1, but there's a bottleneck in the design phase.</div>
+                                    <button class="copy-btn">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-info">
+                        <h3>Summarize & share key moments with AI</h3>
+                        <p>Summarizing and sharing key moments from various contexts has become more efficient than ever.</p>
+                        <button class="btn-primary">Learn more</button>
+                    </div>
+                </div>
+
+                <!-- Right Side: Video Player -->
+                <div class="main-feature-right">
+                    <div class="video-player">
+                        <div class="video-screen">
+                            <div class="video-person">
+                                <div class="person-avatar">👨</div>
+                                <div class="person-details">
+                                    <div class="person-name">John</div>
+                                    <div class="person-status">Speaking</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-controls">
+                            <div class="progress-bar">
+                                <div class="progress-fill"></div>
+                            </div>
+                            <div class="time-display">
+                                <span class="current-time">1:23</span>
+                                <span class="total-time">4:41</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Features Grid -->
+            <div class="bottom-features">
+                <!-- Feature 1: Automatic Recording -->
+                <div class="feature-card automatic-recording">
+                    <div class="feature-demo">
+                        <div class="video-grid">
+                            <div class="grid-participant">
+                                <div class="participant-avatar">👩</div>
+                                <div class="participant-name">Sarah</div>
+                            </div>
+                            <div class="grid-participant">
+                                <div class="participant-avatar">👨</div>
+                                <div class="participant-name">Mike</div>
+                            </div>
+                            <div class="grid-participant recording-overlay">
+                                <div class="participant-avatar">👨</div>
+                                <div class="participant-name">John</div>
+                                <button class="recording-btn">Start recording...</button>
+                            </div>
+                            <div class="grid-participant">
+                                <div class="participant-avatar">👩</div>
+                                <div class="participant-name">Emma</div>
+                            </div>
+                            <div class="grid-participant">
+                                <div class="participant-avatar">👨</div>
+                                <div class="participant-name">Alex</div>
+                            </div>
+                            <div class="grid-participant">
+                                <div class="participant-avatar">👩</div>
+                                <div class="participant-name">Lisa</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Automatic recording</h3>
+                        <p>Start a meeting, and our platform will automatically record audio and video in real-time.</p>
+                        <button class="btn-primary">Learn more</button>
+                    </div>
+                </div>
+
+                <!-- Feature 2: Transcription -->
+                <div class="feature-card transcription">
+                    <div class="feature-demo">
+                        <div class="transcription-demo">
+                            <div class="message from-andy">
+                                <strong>Andy:</strong> Can you explain more about this brief, John?
+                            </div>
+                            <div class="message from-johnson">
+                                <strong>Johnson:</strong> Sure, for this task we need to have custom icons and animation. Eva will help you.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Transcription</h3>
+                        <p>The AI engine transcribes the spoken words into text, making it easy to search and reference specific sections of the meeting.</p>
+                        <button class="btn-primary">Learn more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integrations Section -->
+    <section class="integrations">
+        <div class="container">
+            <h2 class="section-title">All integrations</h2>
+            <div class="integrations-grid">
+                <div class="integration-card">
+                    <div class="integration-icon google-meet">
+                        <div class="google-meet-logo">
+                            <div class="google-colors">
+                                <div class="color-block blue"></div>
+                                <div class="color-block green"></div>
+                                <div class="color-block yellow"></div>
+                                <div class="color-block red"></div>
+                            </div>
+                            <div class="video-icon">📹</div>
+                        </div>
+                    </div>
+                    <h3>Google meet</h3>
+                    <p>Effortlessly integrate our AI powered recording website with Google Meet for an enhanced meeting experience.</p>
+                </div>
+                <div class="integration-card">
+                    <div class="integration-icon zoom">
+                        <div class="zoom-logo">
+                            <div class="zoom-circle">
+                                <i class="fas fa-video"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Zoom</h3>
+                    <p>Transform your Zoom meetings with the integration of our AI-powered recording website. By seamlessly connecting our platform...</p>
+                </div>
+                <div class="integration-card">
+                    <div class="integration-icon teams">
+                        <div class="teams-logo">
+                            <div class="teams-square">
+                                <div class="teams-t">T</div>
+                                <div class="teams-people">👥</div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Microsfot teams</h3>
+                    <p>Elevate your Microsoft Teams meetings with the integration of our AI-powered recording website. Connecting seamlessly with Microsoft Teams...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial">
+        <div class="container">
+            <div class="testimonial-content">
+                <div class="testimonial-text">
+                    <div class="speech-bubble">
+                        <blockquote>
+                            "The accuracy of the transcriptions is impressive, and the ability to search through meetings"
+                        </blockquote>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <strong>Brandon Jackson</strong>
+                            <span>CEO at Zoom</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-nav">
+                        <button class="nav-arrow left"><i class="fas fa-chevron-left"></i></button>
+                        <button class="nav-arrow right"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                <div class="testimonial-image">
+                    <div class="author-photo">
+                        <div class="laptop-setup">
+                            <div class="laptop-screen">
+                                <div class="screen-content">
+                                    <div class="screen-line"></div>
+                                    <div class="screen-line"></div>
+                                    <div class="screen-line"></div>
+                                </div>
+                            </div>
+                            <div class="laptop-base"></div>
+                        </div>
+                        <div class="coffee-cup">
+                            <div class="cup-body"></div>
+                            <div class="cup-handle"></div>
+                        </div>
+                        <div class="person-figure">
+                            <div class="person-head">👨</div>
+                            <div class="person-body"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-text">
+                    <h2>Try metcord today.</h2>
+                    <p>With our advanced artificial intelligence technology, your meetings are not just recorded - they're transformed into valuable insights and productivity boosters.</p>
+                    <div class="cta-buttons">
+                        <button class="btn-primary btn-large">Start for free</button>
+                        <button class="btn-secondary btn-large">Watch demo</button>
+                    </div>
+                </div>
+                <div class="cta-image">
+                    <div class="video-demo-large">
+                        <div class="main-caller-large">
+                            <div class="caller-avatar-large">👩</div>
+                            <div class="recording-indicator-large">
+                                <div class="rec-dot-large"></div>
+                                REC
+                            </div>
+                        </div>
+                        <div class="participants-large">
+                            <div class="participant-large">
+                                <div class="participant-avatar">👨</div>
+                                <div class="participant-time">4:41</div>
+                            </div>
+                            <div class="participant-large">
+                                <div class="participant-avatar">👨</div>
+                            </div>
+                            <div class="participant-large">
+                                <div class="participant-avatar">👨</div>
+                            </div>
+                        </div>
+                        <div class="video-progress">
+                            <div class="progress-info">
+                                <span class="current-time">0:36</span>
+                                <div class="progress-bar-large">
+                                    <div class="progress-fill-large"></div>
+                                </div>
+                            </div>
+                            <div class="subtitle">Andy explained to me to be a good person. Have faith for anything.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">M</span>
+                        <span class="logo-text">Metcord</span>
+                    </div>
+                    <p>Transform your meetings with AI-powered recording and transcription.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Product</h4>
+                        <a href="#">Overview</a>
+                        <a href="#">Metcord AI</a>
+                        <a href="#">Integration</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>Company</h4>
+                        <a href="#">About</a>
+                        <a href="#">Mission and Values</a>
+                        <a href="#">Pricing</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>Resources</h4>
+                        <a href="#">Careers</a>
+                        <a href="#">Contact Us</a>
+                        <a href="#">Blog</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright © 2023 Metcord.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
